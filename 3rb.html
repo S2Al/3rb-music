@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<title>忍 ٌُGA CLAN Extension 0.1 BY dark</title>
+	<link rel="icon" type="image/png" href="https://i.imgur.com/mWeYDK1.gif" sizes="32x32">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700|Lobster:400,300,500,700|Oswald:300,400,500,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="http://dual-agar.me/lib/bootstrap3.3.5.min.css">
+	<link rel="stylesheet" href="http://dual-agar.me/lib/animate.css">
+	<link rel="stylesheet" href="http://dual-agar.me/css/agarplus_v2.css">
+	<link rel="stylesheet" href="http://dual-agar.me/css/ztex.css">
+	<link rel="stylesheet" href="http://dual-agar.me/css/styles_app1.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.8.1/css/perfect-scrollbar.min.css">
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/uikit/3.0.0-beta.9/css/uikit.min.css">
+	<link rel="stylesheet" href="http://dark.darknessxd.tk/extension/dualagar/css/style.css">
+	<link rel="stylesheet" href="http://dark.darknessxd.tk/extension/dualagar/core.css">
+
+	<script type="text/javascript" src="http://dual-agar.me/lib/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="http://dual-agar.me/lib/boot_strap3.3.5.min.js"></script>
+	<script type="text/javascript" src="http://dual-agar.me/lib/riot_plus_compiler_263.min.js"></script>
+	<script>window.gAdSurpressDurMs = 1000;</script>
+
+	<script type="text/javascript" src="http://dark.darknessxd.tk/extension/dualagar/core.js"></script>
+	<script type="riot/tag" src="http://dual-agar.me/js/serverlist_tags_dualagar_v2.html"></script>
+	<script type="text/javascript" src="http://dark.darknessxd.tk/extension/dualagar/js/script.js"></script>
+	<script src="https://cdn.bootcss.com/uikit/3.0.0-beta.40/js/uikit-icons.js"></script>
+	<script src="http://dark.darknessxd.tk/extension/dualagar/js/ui-kit.min.js"></script>
+</head>
+<body>
+	<div id="overlays">
+		<div id="agarelite">
+			<div class="ae-menu-header">
+				
+			<h1>GA CLAN Extention By DARKNESS</h1>
+		</div>
+			<div class="ae-menu-left">
+				<div class="ae-sliders-panel">
+					<div class="ae-navigation ae-navi-centered">
+					    <div class="ae-nav" id="hot-options">
+						    <span uk-icon="icon: info; ratio: 1.3"></span>
+					    </div>
+				    </div>
+				    <div class="ae-menu-left-container">
+					    <div class="ae-sliders">
+					        <div id="delayContainer" class="delayContainer slider-control"></div>
+					        <div id="zoomSpeed" class="zoomSpeed slider-control"></div>
+					        <div id="locationsAmount" class="locationsAmount slider-control"></div>
+				         </div>
+				    </div>
+				</div>
+				<div class="ae-second-panel">
+					<div class="ae-second-skin">
+						<span class="input-group-addon" id="skin_addon">
+						    <span class="circle-skin">
+						        <img class="preview-img2 small-skin" id="preview-img2" src="">
+						    </span>
+					    </span>
+					    <input type="text" id="skin_url2" class="form-control" placeholder="Skin URL 2">
+					</div>
+					<div class="ae-small-info">
+						<p class="ae-about-creator">Developed by Darkness XD</p>
+					</div>
+				</div>
+			</div>
+			<div class="ae-menu-center">
+				<div class="ae-navigation">
+					<div class="ae-nav active" id="home" onclick="setPanel('#home', '#settings', '.ae-home', '.ae-settings'); return false">
+						<span uk-icon="icon: home; ratio: 1.3"></span>
+					</div>
+					<div class="ae-nav" id="settings" onclick="setPanel('#settings', '#home', '.ae-settings', '.ae-home'); return false">
+						<span uk-icon="icon: settings; ratio: 1.3"></span>
+					</div>
+					<div class="ae-nav" id="hotkeys" onclick="showHotkeys(); return false">
+						<span uk-icon="icon: nut; ratio: 1.3"></span>
+					</div>
+					<div class="ae-nav-right">
+						<div class="ae-nav" id="arrow-left">
+						    <span uk-icon="icon: chevron-left; ratio: 1.3"></span>
+					    </div>
+					    <div class="ae-nav" id="arrow-right">
+						    <span uk-icon="icon: chevron-right; ratio: 1.3"></span>
+					    </div>
+					</div>
+				</div>
+				<div class="ae-main">
+					<div class="ae-home">
+						<div class="ae-user-data">
+					        <div class="ae-user-inputs">
+						        <div class="ae-user-slot" id="nicknameContainer">
+						            <span class="input-group-addon" id="nick_addon">
+							            <span uk-icon="icon: user; ratio: 1.1"></span>
+						            </span>
+						            <input type="text" id="nick" class="form-control ae-input-data" placeholder="Nickname" maxlength="15" autofocus="">
+					            </div>
+					            <div class="ae-user-slot" id="teamContainer">
+						            <span class="input-group-addon" id="team_addon">
+							            <span uk-icon="icon: tag; ratio: 1.1"></span>
+						            </span>
+						            <input type="text" id="team_name" class="form-control ae-input-data" placeholder="Team" maxlength="10">
+					            </div>
+					           <div class="ae-user-slot" id="skinContainer">
+						            <span class="input-group-addon" id="skin_addon">
+							            <span class="circle-skin">
+							            	<img class="profile-skin small-skin" src="">
+							            </span>
+						            </span>
+						            <input type="text" id="skin_url" class="form-control ae-input-data" placeholder="Skin URL" maxlength="10">
+					            </div>
+					        </div>
+					        <div class="ae-user-buttons">
+						        <div class="btn-main ae-btn-play" onclick="setNickA(); return false">
+						            <span uk-icon="icon: play; ratio: 1.3"></span>
+						        </div>
+				                <div class="btn-main ae-btn-spectate" onclick="setNickB(); return spectate(),!1">
+				               	    <span uk-icon="icon: sign-in; ratio: 1.1"></span>
+				                </div>
+					        </div>
+				        </div>
+					</div>
+					<div class="ae-settings">
+						<div class="settingsRow">
+					        <div class="col-xs-6 firstSettings"></div>
+					        <div class="col-xs-6 secondSettings"></div>
+				            <div class="col-xs-6 extraSettings"></div>
+			            </div>
+					</div>
+				</div>
+			</div>
+			<div class="ae-menu-right">
+				<div class="ae-navigation ae-navi-centered">
+					<div class="ae-nav" id="info">
+						<span uk-icon="icon: world; ratio: 1.3"></span>
+					</div>
+				</div>
+				<div class="ae-server-list">
+					<server-list-root></server-list-root>
+				</div>
+			</div>
+			<div class="hotkeys-panel">
+				<div class="hotkeys-content">
+					<div class="hotkeys-container"></div>
+				</div>
+			</div>
+		</div>
+		<div id="tosBox">
+			 <span><a style="float: left; padding-top:19px; color: #fff; font-size: 12px; text-decoration: none;" href="https://discordapp.com/invite/CEsaKaZ" target="_blank">GA CLAN Extension || V0.1 © Darkness</a><a href="https://www.youtube.com/channel/UC9sumz0fo-0IKmGbqC0dJMg/?sub_confirmation=1" target="_blank"><img style="margin-top: 6px; float: right;" src="http://siniri.ga/images/youtube.cur" height="40" width="40"></a></span></div>
+		</div>
+	</div>
+
+	<canvas id='canvas'></canvas>
+
+	<div id='overlays2'>
+		<div id="status-first">
+			<div id="score" class="status_elem">Score: <div class="score_txt">0</div></div>
+			<div id="pieces" class="status_elem">Pieces: <div class="pieces_txt">0/16</div></div>
+			<div id="fps" class="status_elem">FPS: <div class="fps_txt">0</div></div>
+		</div>
+		<div id="status-second">
+			<div id="caneat" class="status_elem">Can Eat: <div class="caneat_txt">0</div></div>
+			<div id="cansplit" class="status_elem">Can Split: <div class="cansplit_txt">0</div></div>
+			<div id="eat" class="status_elem">Eat: <div class="eat_txt">0</div></div>
+			<div id="split" class="status_elem">Split: <div class="split_txt">0</div></div>
+		</div>
+		<div id="div_lb">
+			<div class="header" id="lb_cap">GA CLAN</div>
+			<div id='lb_detail'></div>
+		</div>
+		<div id="div_lb2" style="display: none;">
+			<div class="header" id="lb_caption2">Team Ranks</div>
+			<div id="lb_detail2"></div>
+			<canvas id="lb_canvas_chart"></canvas>
+		</div>
+		<div id="localTime"></div>
+	</div>
+
+	<script>
+		riot.mount('*');
+	</script>
+</body>
+
+</html>
